@@ -1,0 +1,43 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+An Implementation of a Rendezvous using Semaphores.  
+
+
+{\ttfamily \#include \char`\"{}Semaphore.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_ad4db00b03053cac70fc4f3acc4f262f9}\label{main_8cpp_ad4db00b03053cac70fc4f3acc4f262f9}} 
+void \mbox{\hyperlink{main_8cpp_ad4db00b03053cac70fc4f3acc4f262f9}{task\+One}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ first\+Sem, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ second\+Sem, int delay)
+\begin{DoxyCompactList}\small\item\em task\+One displays a message that is split in to 2 sections to show how a rendezvous works \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8cpp_ac7cb6b39082835c7e3c853c42af9ecdc}\label{main_8cpp_ac7cb6b39082835c7e3c853c42af9ecdc}} 
+void {\bfseries task\+Two} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ first\+Sem, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ second\+Sem, int delay)
+\item 
+int \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em creates two threads with delay times and joins them to main thread \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Implementation of a Rendezvous using Semaphores. 
+
+Uses C++11 features such as mutex and condition variables to implement an example of a rendezvous for threads 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+creates two threads with delay times and joins them to main thread 
+
+$<$ Creating Semaphores
+
+$<$ Launch the threads ~\newline
+
+
+$<$ Joining to main thread
